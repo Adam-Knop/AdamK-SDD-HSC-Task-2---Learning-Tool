@@ -13,6 +13,32 @@ def settingsPress():
 def lessonPress():
     print("LESSON BUTTON TEST") #Test that the button works - will be useful later
 
+    # Create "window" (frame) for lesson
+    lessonWindow = ctk.CTkFrame(root)
+    lessonWindow.place(x=0, y=0, relwidth=1, relheight=1)
+
+    # Create text for lesson frame
+    textTopLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT TOP")
+    textTopLesson.place(anchor="center", relx=0.5, rely=0.3)
+
+    textMiddleLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT MIDDLE")
+    textMiddleLesson.place(anchor="center", relx=0.5, rely=0.5)
+
+    textBottomLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT TOP")
+    textBottomLesson.place(anchor="center", relx=0.5, rely=0.7)
+
+
+
+    # Go back button for the lesson
+    def gobackPress():
+        print("GO BACK TEST")
+        lessonWindow.destroy()
+
+    gobackbutton = ctk.CTkButton(lessonWindow, text="Go Back", command=gobackPress)
+    gobackbutton.place(x=15, y=15)
+
+    
+
 # Define start button
 def startPress():
     print("START BUTTON TEST") #Test that the button works - will be useful later
