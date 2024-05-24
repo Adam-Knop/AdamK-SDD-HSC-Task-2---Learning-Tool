@@ -71,7 +71,7 @@ def settingsPress():
 def lessonPress():
     print("LESSON BUTTON TEST") # Test that the button works - will be useful later
 
-    # Create "window" (frame) for lesson
+    # Create frame for lesson
     lessonWindow = ctk.CTkFrame(root)
     lessonWindow.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -100,6 +100,54 @@ def lessonPress():
 # Define start button
 def startPress():
     print("START BUTTON TEST") # Test that the button works - will be useful later
+
+    # Create frame for lesson
+    quizQWindow = ctk.CTkFrame(root)
+    quizQWindow.place(x=0, y=0, relwidth=1, relheight=1)
+
+    # Create question 
+    textQuestion = ctk.CTkLabel(quizQWindow, text="TEST - QUESTION WILL GO HERE")
+    textQuestion.place(anchor="center", relx=0.5, rely=0.35)
+
+    # Create question answer
+    # Answer 1
+    def Radio1select():
+        print("ANSWER 1 SELECTED")
+
+    answer1Radio = ctk.CTkRadioButton(quizQWindow, text="PLACEHOLDER", command=Radio1select)
+    answer1Radio.place(anchor="center", relx=0.45, rely=0.5)
+
+    
+    # Answer 2
+    def Radio2select():
+        print("ANSWER 1 SELECTED")
+
+    answer2Radio = ctk.CTkRadioButton(quizQWindow, text="PLACEHOLDER", command=Radio2select)
+    answer2Radio.place(anchor="center", relx=0.45, rely=0.6)
+
+    # Answer 3
+    def Radio3select():
+        print("ANSWER 1 SELECTED")
+
+    answer3Radio = ctk.CTkRadioButton(quizQWindow, text="PLACEHOLDER", command=Radio3select)
+    answer3Radio.place(anchor="center", relx=0.45, rely=0.7)
+
+    # Answer 4
+    def Radio4select():
+        print("ANSWER 1 SELECTED")
+
+    answer4Radio = ctk.CTkRadioButton(quizQWindow, text="PLACEHOLDER", command=Radio4select)
+    answer4Radio.place(anchor="center", relx=0.45, rely=0.8)
+
+
+
+    # Go back button for the quiz
+    def gobackPress():
+        print("GO BACK TEST - QUIZ")
+        quizQWindow.destroy()
+
+    gobackbutton = ctk.CTkButton(quizQWindow, text="Go Back to main menu", command=gobackPress)
+    gobackbutton.place(x=15, y=15)
 
 
 
