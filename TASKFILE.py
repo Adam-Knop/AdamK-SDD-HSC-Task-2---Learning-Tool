@@ -7,11 +7,69 @@ root.title("Algebra Learning Program")
 
 # Define settings button
 def settingsPress():
-    print("SETTINGS BUTTON TEST") #Test that the button works - will be useful later
+    print("SETTINGS BUTTON TEST") # Test that the button works - will be useful later
+    
+    # Create "window" (frame) for settings
+    settingsWindow = ctk.CTkFrame(root)
+    settingsWindow.place(x=0, y=0, relwidth=1, relheight=1)
+
+
+
+    # Dropdown boxes in settings
+
+    # Background colour dropdown box    
+    def bgcolourdpPress(choice):
+        print("DROPDOWN BG COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
+
+    backgroundDP = ctk.CTkOptionMenu(settingsWindow, values=["TEST 1", "TEST 2", "TEST 3", "TEST 4", "TEST 5"], command = bgcolourdpPress)
+    backgroundDP.set("TEST 1")
+    backgroundDP.place(anchor="center", relx=0.5, rely=0.5)
+
+    # Text colour dropdown box    
+    def textcolourdpPress(choice):
+        print("DROPDOWN TC COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
+
+    textcolourDP = ctk.CTkOptionMenu(settingsWindow, values=["TEST 1", "TEST 2", "TEST 3", "TEST 4", "TEST 5"], command = textcolourdpPress)
+    textcolourDP.set("TEST 1")
+    textcolourDP.place(anchor="center", relx=0.35, rely=0.5)
+
+    # Scale dropdown box    
+    def scalesizedpPress(choice):
+        print("DROPDOWN SS PRESSED: ",choice) # Test that the button works - will be useful later
+
+    scalesizeDP = ctk.CTkOptionMenu(settingsWindow, values=["TEST 1", "TEST 2", "TEST 3", "TEST 4", "TEST 5"], command = scalesizedpPress)
+    scalesizeDP.set("TEST 1")
+    scalesizeDP.place(anchor="center", relx=0.65, rely=0.5)   
+
+    # Text labels for dropdown boxes in settings
+
+    # Background colour DP text label
+    BGDPtext = ctk.CTkLabel(settingsWindow, text=("BGDP TEXT TEST"))
+    BGDPtext.place(anchor="center", relx=0.5, rely=0.45)
+
+    # Text colour DP text label
+    TCDPtext = ctk.CTkLabel(settingsWindow, text=("TCDP TEXT TEST"))
+    TCDPtext.place(anchor="center", relx=0.35, rely=0.45)
+
+    # Size scale DP text label
+    SSDPtext = ctk.CTkLabel(settingsWindow, text=("SSDP TEXT TEST"))
+    SSDPtext.place(anchor="center", relx=0.65, rely=0.45)
+
+
+
+    # Go back button for the settings
+    def gobackPress():
+        print("GO BACK TEST - SETTINGS")
+        settingsWindow.destroy()
+
+    gobackbutton = ctk.CTkButton(settingsWindow, text="Go Back", command=gobackPress)
+    gobackbutton.place(x=15, y=15)
+
+
 
 # Define lesson button
 def lessonPress():
-    print("LESSON BUTTON TEST") #Test that the button works - will be useful later
+    print("LESSON BUTTON TEST") # Test that the button works - will be useful later
 
     # Create "window" (frame) for lesson
     lessonWindow = ctk.CTkFrame(root)
@@ -31,7 +89,7 @@ def lessonPress():
 
     # Go back button for the lesson
     def gobackPress():
-        print("GO BACK TEST")
+        print("GO BACK TEST - LESSON")
         lessonWindow.destroy()
 
     gobackbutton = ctk.CTkButton(lessonWindow, text="Go Back", command=gobackPress)
@@ -41,7 +99,7 @@ def lessonPress():
 
 # Define start button
 def startPress():
-    print("START BUTTON TEST") #Test that the button works - will be useful later
+    print("START BUTTON TEST") # Test that the button works - will be useful later
 
 
 
