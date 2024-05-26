@@ -5,65 +5,65 @@ root.title("Algebra Learning Program")
 
 
 
-# Define settings button
-# def settingsPress():
-    # print("SETTINGS BUTTON TEST") # Test that the button works - will be useful later
+#Define settings button
+def settingsPress():
+    print("SETTINGS BUTTON TEST") # Test that the button works - will be useful later
     
-    # Create "window" (frame) for settings
-    # settingsWindow = ctk.CTkFrame(root)
-    # settingsWindow.place(x=0, y=0, relwidth=1, relheight=1)
+    #Create "window" (frame) for settings
+    settingsWindow = ctk.CTkFrame(root)
+    settingsWindow.place(x=0, y=0, relwidth=1, relheight=1)
 
 
 
-    # Dropdown boxes in settings
+    #Dropdown boxes in settings
 
-    # Background colour dropdown box    
-    # def bgcolourdpPress(choice):
-        # print("DROPDOWN BG COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
+    #Background colour dropdown box    
+    def bgcolourdpPress(choice):
+        print("DROPDOWN BG COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
 
-    # backgroundDP = ctk.CTkOptionMenu(settingsWindow, values=["Grey", "Black", "White", "Blue", "Green"], command = bgcolourdpPress)
-    # backgroundDP.set("Grey")
-    #backgroundDP.place(anchor="center", relx=0.5, rely=0.45)
+    backgroundDP = ctk.CTkOptionMenu(settingsWindow, values=["Grey", "Black", "White", "Blue", "Green"], command = bgcolourdpPress)
+    backgroundDP.set("Grey")
+    backgroundDP.place(anchor="center", relx=0.5, rely=0.45)
 
-    # Text colour dropdown box    
-    #def textcolourdpPress(choice):
-        #print("DROPDOWN TC COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
+     #Text colour dropdown box    
+    def textcolourdpPress(choice):
+        print("DROPDOWN TC COLOUR PRESSED: ",choice) # Test that the button works - will be useful later
 
-#    textcolourDP = ctk.CTkOptionMenu(settingsWindow, values=["White", "Black", "Yellow", "Pink", "Green"], command = textcolourdpPress)
- #   textcolourDP.set("White")
-  #  textcolourDP.place(anchor="center", relx=0.35, rely=0.45)
-#
-    # Scale dropdown box    
-  #  def scalesizedpPress(choice):
-  #      print("DROPDOWN SS PRESSED: ",choice) # Test that the button works - will be useful later
+    textcolourDP = ctk.CTkOptionMenu(settingsWindow, values=["White", "Black", "Yellow", "Pink", "Green"], command = textcolourdpPress)
+    textcolourDP.set("White")
+    textcolourDP.place(anchor="center", relx=0.35, rely=0.45)
 
-   # scalesizeDP = ctk.CTkOptionMenu(settingsWindow, values=["100%", "80%", "60%", "120%", "140%"], command = scalesizedpPress)
-    #scalesizeDP.set("100%")
-    #scalesizeDP.place(anchor="center", relx=0.65, rely=0.45)   
+     #Scale dropdown box    
+    def scalesizedpPress(choice):
+        print("DROPDOWN SS PRESSED: ",choice) # Test that the button works - will be useful later
 
-    # Text labels for dropdown boxes in settings
+    scalesizeDP = ctk.CTkOptionMenu(settingsWindow, values=["100%", "80%", "60%", "120%", "140%"], command = scalesizedpPress)
+    scalesizeDP.set("100%")
+    scalesizeDP.place(anchor="center", relx=0.65, rely=0.45)   
 
-    # Background colour DP text label
-    #BGDPtext = ctk.CTkLabel(settingsWindow, text=("Background colour"))
-    #BGDPtext.place(anchor="center", relx=0.5, rely=0.35)
+     #Text labels for dropdown boxes in settings
 
-    # Text colour DP text label
-    #TCDPtext = ctk.CTkLabel(settingsWindow, text=("Text colour"))
-    #TCDPtext.place(anchor="center", relx=0.35, rely=0.35)
+     #Background colour DP text label
+    BGDPtext = ctk.CTkLabel(settingsWindow, text=("Background colour"))
+    BGDPtext.place(anchor="center", relx=0.5, rely=0.35)
 
-    # Size scale DP text label
-    #SSDPtext = ctk.CTkLabel(settingsWindow, text=("Size (scale)"))
-    #SSDPtext.place(anchor="center", relx=0.65, rely=0.35)
+     #Text colour DP text label
+    TCDPtext = ctk.CTkLabel(settingsWindow, text=("Text colour"))
+    TCDPtext.place(anchor="center", relx=0.35, rely=0.35)
+
+     #Size scale DP text label
+    SSDPtext = ctk.CTkLabel(settingsWindow, text=("Size (scale)"))
+    SSDPtext.place(anchor="center", relx=0.65, rely=0.35)
 
 
 
-    # Go back button for the settings
-    #def gobackPress():
-     #   print("GO BACK TEST - SETTINGS")
-      #  settingsWindow.destroy()
+     #Go back button for the settings
+    def gobackPress():
+        print("GO BACK TEST - SETTINGS")
+        settingsWindow.destroy()
 
-    #gobackbutton = ctk.CTkButton(settingsWindow, text="Go Back", command=gobackPress)
-    #gobackbutton.place(x=15, y=15)
+    gobackbutton = ctk.CTkButton(settingsWindow, text="Go Back", command=gobackPress)
+    gobackbutton.place(x=15, y=15)
 
 
 
@@ -178,9 +178,9 @@ def startPress():
 
 
 # Create settings button
-# settingbutton = ctk.CTkButton(root, text="Settings", command=settingsPress)
-# settingbutton.place(x=15, y=15)
-# settingbutton = ctk.set_widget_scaling(1.2)
+settingbutton = ctk.CTkButton(root, text="Settings", command=settingsPress)
+settingbutton.place(x=15, y=15)
+settingbutton = ctk.set_widget_scaling(1.2)
 
 # Create lesson button
 lessonbutton = ctk.CTkButton(root, text="Lesson", command=lessonPress)
