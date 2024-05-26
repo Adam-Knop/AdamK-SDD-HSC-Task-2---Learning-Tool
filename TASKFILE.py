@@ -76,13 +76,13 @@ def lessonPress():
     lessonWindow.place(x=0, y=0, relwidth=1, relheight=1)
 
     # Create text for lesson frame
-    textTopLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT TOP")
+    textTopLesson = ctk.CTkLabel(lessonWindow, text="Algebra is the manipulation of equations to find an unkown variable\nTake this equation as an example\n2x - 5 = 5")
     textTopLesson.place(anchor="center", relx=0.5, rely=0.3)
 
-    textMiddleLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT MIDDLE")
+    textMiddleLesson = ctk.CTkLabel(lessonWindow, text="The first step in solving algebra is moving the all the x's to one side (in this case just the one), and all the numbers to the other.\nThis looks like this:\n2x - 5 + 5 = 5 + 5\n2x = 10")
     textMiddleLesson.place(anchor="center", relx=0.5, rely=0.5)
 
-    textBottomLesson = ctk.CTkLabel(lessonWindow, text="SAMPLE TEXT TOP")
+    textBottomLesson = ctk.CTkLabel(lessonWindow, text="After this is done you should be left with just x on one side and numbers on the other. Now you solve for x by doing the remaining simplification if necessary:\n2x/2 = 10/x\nx = 5")
     textBottomLesson.place(anchor="center", relx=0.5, rely=0.7)
 
 
