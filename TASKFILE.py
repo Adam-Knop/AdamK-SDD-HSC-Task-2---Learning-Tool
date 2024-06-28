@@ -178,7 +178,7 @@ def startPress():
         Answerincorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="Wrong answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="❎ Wrong ❎ answer was selected. Go and try again!")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -196,7 +196,7 @@ def startPress():
         Answercorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        correctAnswer1text = ctk.CTkLabel(Answercorrect1, text="Correct answer was selected")
+        correctAnswer1text = ctk.CTkLabel(Answercorrect1, text="✅ Correct ✅ answer was selected")
         correctAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(correctAnswer1text)
 
@@ -265,7 +265,7 @@ def startPress2():
         Answerincorrect2.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer2text = ctk.CTkLabel(Answerincorrect2, text="Wrong answer was selected")
+        wrongAnswer2text = ctk.CTkLabel(Answerincorrect2, text="❎ Wrong ❎ answer was selected. Go and try again!")
         wrongAnswer2text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer2text)
 
@@ -283,7 +283,7 @@ def startPress2():
         Answercorrect2.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        correctAnswer2text = ctk.CTkLabel(Answercorrect2, text="Correct answer was selected")
+        correctAnswer2text = ctk.CTkLabel(Answercorrect2, text="✅ Correct ✅ answer was selected")
         correctAnswer2text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(correctAnswer2text)
 
@@ -350,7 +350,7 @@ def startPress3():
         Answerincorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="Wrong answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="❎ Wrong ❎ answer was selected. Go and try again!")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -368,7 +368,7 @@ def startPress3():
         Answercorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answercorrect1, text="Correct answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answercorrect1, text="✅ Correct ✅ answer was selected")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -436,7 +436,7 @@ def startPress4():
         Answerincorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="Wrong answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="❎ Wrong ❎ answer was selected. Go and try again!")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -454,7 +454,7 @@ def startPress4():
         Answercorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answercorrect1, text="Correct answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answercorrect1, text="✅ Correct ✅ answer was selected")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -522,7 +522,7 @@ def startPress5():
         Answerincorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="Wrong answer was selected")
+        wrongAnswer1text = ctk.CTkLabel(Answerincorrect1, text="❎ Wrong ❎ answer was selected. Go and try again!")
         wrongAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(wrongAnswer1text)
 
@@ -540,7 +540,7 @@ def startPress5():
         Answercorrect1.place(x=0, y=0, relwidth=1, relheight=1)
         apply_current_settings()
 
-        correctAnswer1text = ctk.CTkLabel(Answercorrect1, text="Correct answer was selected")
+        correctAnswer1text = ctk.CTkLabel(Answercorrect1, text="✅ Correct ✅ answer was selected")
         correctAnswer1text.place(anchor="center", relx=0.5, rely=0.4)
         track_text_label(correctAnswer1text)
 
@@ -594,17 +594,17 @@ def startPress5():
 
 
 # Create settings button
-settingbutton = ctk.CTkButton(root, text="Settings", command=settingsPress)
+settingbutton = ctk.CTkButton(root, text="⚙️ Settings ⚙️", command=settingsPress)
 settingbutton.place(x=15, y=15)
 settingbutton = ctk.set_widget_scaling(1.2)
 
 # Create lesson button
-lessonbutton = ctk.CTkButton(root, text="Lesson", command=lessonPress)
+lessonbutton = ctk.CTkButton(root, text="🖊 Lesson 🖊", command=lessonPress)
 lessonbutton.place(anchor="center", relx=0.5, rely=0.9)
 track_button(lessonbutton)
 
 # Create start button
-startbutton = ctk.CTkButton(root, text="Start", command=startPress)
+startbutton = ctk.CTkButton(root, text="👉 Start 👈", command=startPress)
 startbutton.place(anchor="center", relx=0.5, rely=0.5)
 track_button(startbutton)
 
