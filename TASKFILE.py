@@ -597,7 +597,6 @@ def startPress5():
 settingbutton = ctk.CTkButton(root, text="Settings", command=settingsPress)
 settingbutton.place(x=15, y=15)
 settingbutton = ctk.set_widget_scaling(1.2)
-track_button(settingbutton)
 
 # Create lesson button
 lessonbutton = ctk.CTkButton(root, text="Lesson", command=lessonPress)
